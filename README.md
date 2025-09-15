@@ -18,36 +18,43 @@ Markdown ファイルの `<table>` を Excel/CSV/Google Sheet に変換するツ
 ---
 
 ## インストール方法 (Installation)
-
+### リポジトリを clone
 ```bash
-# リポジトリを clone
 git clone https://github.com/quanzhonghuying/md2sheet.git
 cd md2sheet
-
-# 仮想環境を作成
+```
+### 仮想環境を作成
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-# 依存関係をインストール
+### 依存関係をインストール
+```bash
 pip install -r requirements.txt
+```
 ## 使い方 (Usage)
 
+### Excel 出力
 ```bash
-# Excel 出力
 python3 -m md2sheet.main tests/test_default.md --mode excel --output out.xlsx
-
-# CSV 出力
+```
+### CSV 出力
+```bash
 python3 -m md2sheet.main tests/test_default.md --mode csv --output outputs/
-
-# コメントモードテスト
+```
+### コメントモードテスト
+```bash
 python3 -m md2sheet.main tests/test_comment.md --mode excel --output out_comment.xlsx
-
-# 見出しモードテスト
+```
+### 見出しモードテスト
+```bash
 python3 -m md2sheet.main tests/test_heading.md --mode excel --output out_heading.xlsx
-
-# 空ファイルテスト（テーブルなし）
+```
+### 空ファイルテスト（テーブルなし）
+```bash
 python3 -m md2sheet.main tests/test_empty.md --mode excel --output out_empty.xlsx
-
+```
 ## テストファイル (Test files)
 
 - `tests/test_default.md` → 普通の Markdown テーブル  
