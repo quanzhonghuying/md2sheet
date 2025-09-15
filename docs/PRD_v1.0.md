@@ -76,3 +76,50 @@ md2sheet/
 ├── README.md            # プロジェクト概要
 └── docs/
     └── PRD_v1.0.md      # 本仕様書
+```
+---
+## 6. 利用方法
+
+```bash
+python md2sheet.py
+```
+**実行後のプロンプト例:**
+```plaintext
+Markdown ファイルのパスを入力してください: docs/table.md
+出力モードを選択してください:
+1. Excel
+2. CSV
+3. Google Sheet
+出力ファイルパスを入力してください: output.xlsx
+```
+
+**出力メッセージ:**
+```plaintext
+✅ Excel ファイルを生成しました: output.xlsx
+```
+## 7. 拡張計画
+### 7.1 Google Sheets API 対応
++ Excel 出力後、自動的に Google Drive にアップロードし、Google Sheet として公開できるようにする。
+
++ 実行完了時に共有用 URL を出力する。
+
+### 7.2 カスタムルール定義
++ 設定ファイル（例: config.yaml）でシート分割ルールを自由に定義可能にする。
+
+### 7.1 Google Sheets API 対応
+
++ Excel 出力後、自動的に Google Drive にアップロードし、Google Sheet として公開できるようにする。
+
++ 実行完了時に共有用 URL を出力する。
+
+### 7.2 カスタムルール定義
+
++ 設定ファイル（例: config.yaml）でシート分割ルールを自由に定義可能にする。
+
++ \## 二級見出し でも分割できるように拡張する。
+
+### 7.3 CI/CD パイプライン連携
+
++ GitHub Actions や GitLab CI で自動的に Markdown → Excel/Google Sheet を生成する仕組みを整備する。
+
++ ドキュメント変更時に最新の Excel/Google Sheet が自動的に作成・配布されるようにする。 
