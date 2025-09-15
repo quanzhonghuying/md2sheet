@@ -25,7 +25,7 @@ md2sheet
 ├── ExcelWriter        # Excel 出力 (openpyxl)
 ├── CSVWriter          # CSV 出力
 └── GoogleSheetWriter  # Google Sheets API 出力（将来対応）
-
+```
 ## 3. モジュール設計
 
 ### 3.1 InputHandler
