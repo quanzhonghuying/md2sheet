@@ -79,7 +79,7 @@ class Converter:
 ### 2.3 TableExtractor
 
 + 役割
-HTML ファイルから <table> を抽出し、DataFrame 化する。
+HTML ファイルから\<table>を抽出し、DataFrame 化する。
 
 + 関数設計
 
