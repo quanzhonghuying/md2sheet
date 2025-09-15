@@ -34,12 +34,12 @@ Excel / CSV / Google Sheet に変換する CLI ツールである。
 
 ```mermaid
 flowchart LR
-    A[Markdown ファイル] --> B[“Converter<br>(Pandoc)”]
-    B --> C[TableExtractor\n(pandas.read_html)]
-    C --> D[SheetManager<br>(ルール適用)]
-    D --> E[ExcelWriter<br>(openpyxl)]
+    A[Markdown ファイル] --> B["Converter<br>(Pandoc)"]
+    B --> C["TableExtractor<br>(pandas.read_html)"]
+    C --> D["SheetManager<br>(ルール適用)"]
+    D --> E["ExcelWriter<br>(openpyxl)"]
     D --> F[CSVWriter]
-    D --> G[GoogleSheetWriter<br>(API, 将来対応)]
+    D --> G["GoogleSheetWriter<br>(API, 将来対応)"]
 
 ```
 ## 5. データフロー
